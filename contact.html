@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <title>My website</title>
+</head>
+<body>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="./index.html"><h1><span>A</span>drien</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                <li><a href="./index.html#hero" data-after="Home">Home</a></li>
+                <!-- <li><a href="./index.html#services" data-after="Service">Services</a></li> -->
+                <li><a href="./index.html#projects" data-after="Projects">Projets</a></li>
+                <li><a href="./index.html#skills" data-after="skills">Compétences</a></li>
+                <li><a href="./index.html#about" data-after="About">A propos</a></li>
+                <li><a href="./index.html#contact" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Header -->
+
+      <!-- Form Section -->
+      <section id="form">
+          <div class="container">
+              <div class="form">
+                <h2>Envoyez moi un message</h2>
+                  <form action="" method="post">
+                      <div class="form-item">
+                        <input type="text" class="txtb"  required id="name">
+                        <label for="name" class="label-name">
+                            <span>Nom</span>
+                        </label>
+                      </div>
+                      <div class="form-item">
+                        <input type="text" class="txtb" required id="email">
+                        <label for="email" class="label-name">
+                            <span>Email</span>
+                        </label>
+                      </div>
+                      <div class="form-item area">
+                        <textarea type="text" class="txtb" required id="message"></textarea>
+                        <label for="name" class="label-area">
+                            <span>Message</span>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn" onclick="send()">Envoyer</button>
+                  </form>
+              </div>
+              <div class="wave"></div>
+          </div>
+      </section>
+      <!-- End Form Section -->
+          <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1><span>A</span>drien</h1>
+                <h2>Développeur web</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="./img/instagram2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
+    <script>
+        function send() {
+            Email.send({
+                // name: document.getElementById('name').value,
+                Host : "smtp.gmail.com",
+                Username : "adrienkolodziej@gmail.com",
+                Password : "pass",
+                To : "adrien.kolodziej@gmail.com",
+                From : document.getElementById('email').value,
+                Subject : "oui",
+                Body : document.getElementById('message').value
+            }).then (function (response) {
+                alert("mail envoyé")
+            });
+        };
+    </script>
+</body>
+</html>
