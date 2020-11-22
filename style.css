@@ -381,7 +381,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
-	min-width: 800px;
+	min-width: 600px;
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
@@ -1010,11 +1010,12 @@ width: 100%;
 	/* End header */
 
 	#projects .project-item {
-		min-width: 1200px;
+		min-width: 400px;
 	}
 	#projects .project-img {
 		width: 100%;
-		min-height: 400px;
+		min-height: 300px;
+		max-height: 400px;
 	}
 	#projects .project-info {
 		width: 100%;
