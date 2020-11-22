@@ -519,7 +519,7 @@ p {
 	flex-direction: column-reverse;
 	text-align: center;
 	margin: 0 auto;
-	padding: 0px 20px;
+	padding: 100px 20px;
 	background: #fff;
 }
 
@@ -569,6 +569,10 @@ p {
 	width: 100%;
 	margin: 0 auto;
 	background:#f8f8f8;
+	padding-top: 50px;
+}
+#contact .contact-title {
+	margin-bottom: 30px;
 }
 #contact .contact-items {
     padding: 15px;
@@ -703,10 +707,21 @@ p {
 /* End Keyframes */
 
 /* Media Query For Phone */
+@media (min-width: 320px) and (max-width: 480px) {
+
+.skills-item {
+	max-width: 300px;
+}
+}
+
 @media only screen and (max-width: 767px) {
 
 #contact a{
 	margin-left: 68px;
+}
+#contact .contact-items {
+	padding: 0;
+	max-width: 350px;
 }
 #contact .contact-item {
 margin-left: 35px;
@@ -726,7 +741,6 @@ margin-top: 0;
 }
 .skills-bloc {
 	flex-direction: column;
-	margin-left: 20px;
 }
 .skills-item {
 	max-height: 450px;
