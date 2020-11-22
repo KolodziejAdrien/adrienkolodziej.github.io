@@ -419,6 +419,10 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+#projects .project-img a {
+	position: relative;
+	z-index: 2;
+}
 #projects .project-img:after {
 	content: '';
 	position: absolute;
@@ -741,7 +745,9 @@ p {
 	min-width: 0;
 }
 #projects .project-item img{
+	width: 315px;
 	max-width: 400px;
+	min-height: 150px;
 }
 #projects .project-info {
 	max-width: 400px;
@@ -765,10 +771,13 @@ margin-top: 0;
 	min-width: 0;
 }
 #projects .project-item img{
+	width: 315px;
 	max-width: 400px;
+	min-height: 150px;
 }
 #projects .project-info {
-	max-width: 400px;
+	max-width: 390px;
+
 }
 .skills-header {
 	margin-top: 80px;
@@ -959,6 +968,7 @@ margin-top: 0;
 
 #projects .project-img {
 width: 100%;
+min-height: 250px;
 }
 .project-info {
 width: 100%;
