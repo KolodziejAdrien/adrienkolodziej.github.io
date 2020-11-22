@@ -937,6 +937,9 @@ margin-top: 0;
 #contact .contact-item {
 	width: 400px;
 }
+#header .nav-list li {
+	margin-left: 45px;
+}
 }
 /* End Media Query For Tablet */
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -1002,6 +1005,9 @@ width: 100%;
 	}
 	#header .nav-list ul li {
 		display: inline-block;
+	}
+	#header .nav-list li {
+		margin-left: 45px;
 	}
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
