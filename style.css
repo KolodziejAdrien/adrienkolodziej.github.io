@@ -770,6 +770,9 @@ p {
 margin-left: 35px;
 margin-top: 0;
 }
+#header .nav-list ul li {
+	margin-bottom: 20px;
+}
 #projects .project-item {
 	min-width: 0;
 }
