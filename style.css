@@ -646,6 +646,7 @@ p {
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
+
 #footer h2 {
 	color: white;
 	font-weight: 500;
@@ -654,9 +655,13 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+#footer h1 {
+	margin-right: 0;
+	margin-left: 25px;
+}
 #footer .social-icon {
     display: flex;
-    margin-left: 43px;
+    margin-left: 25px;
 	margin-bottom: 30px;
 }
 #footer .social-item {
