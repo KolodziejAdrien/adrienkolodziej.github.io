@@ -118,7 +118,6 @@ p {
 
 #header .nav-list li {
 	position: relative;
-	margin-left: 25px;
 }
 
 #header .nav-list a:before {
@@ -717,6 +716,9 @@ p {
 .section-title{
 	font-size: 3.7rem;
 }
+#header .nav-list ul li {
+	margin-bottom: 20px;
+}
 #contact .contact-items {
 	padding: 0;
 	max-width: 320px;
@@ -814,6 +816,9 @@ margin-top: 0;
 	}
 	#contact .contact-item {
 		width: 400px;
+	}
+	#header .nav-list ul li {
+		margin-bottom: 20px;
 	}
 
 	/* Hero */
@@ -937,8 +942,8 @@ margin-top: 0;
 #contact .contact-item {
 	width: 400px;
 }
-#header .nav-list li {
-	margin-left: 45px;
+#header .nav-list ul li {
+	margin-bottom: 20px;
 }
 }
 /* End Media Query For Tablet */
@@ -956,6 +961,7 @@ margin-top: 0;
 }
 #header .nav-list ul li {
 	display: inline-block;
+	margin-left: 45px;
 }
 #header .nav-list ul li a {
 	font-size: 1.8rem;
@@ -1005,10 +1011,9 @@ width: 100%;
 	}
 	#header .nav-list ul li {
 		display: inline-block;
-	}
-	#header .nav-list li {
 		margin-left: 45px;
 	}
+
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
