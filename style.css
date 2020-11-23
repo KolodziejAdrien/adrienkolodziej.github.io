@@ -638,6 +638,23 @@ p {
     background: none;
 }
 /*End contact Section */
+/* Bandeau Section */
+#bandeau .bandeau {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+}
+.bandeau p {
+	font-size: 1.9rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	text-align: center;
+}
+.bandeau span {
+	color: #1752ba;
+}
+/* End Bandeau Section */
 
 /* Footer */
 #footer {
@@ -721,6 +738,12 @@ p {
 
 /* Media Query For Phone */
 @media (min-width: 320px) and (max-width: 480px) {
+.bandeau p {
+	font-size: 1.7rem;
+	font-weight: 500;
+	letter-spacing: .1rem;
+	text-align: center;
+}
 .section-title{
 	font-size: 3.7rem;
 }
