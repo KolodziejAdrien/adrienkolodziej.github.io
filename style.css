@@ -416,6 +416,7 @@ p {
 	border-right: solid 2px #f8f8f8;
 	border-radius: 20px;
 	backdrop-filter: blur(40px);
+	overflow: hidden;
 }
 .skills-item:not(:last-child) {
 	margin-right: 50px;
