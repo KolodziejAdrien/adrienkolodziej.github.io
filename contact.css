@@ -190,6 +190,9 @@ color: lightgray;
     .infos h2{
         font-size: 1.8rem;
     }
+    .form{
+        margin-bottom: 2em;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -204,6 +207,9 @@ color: lightgray;
         margin-top: 5vh;
         justify-content: center;
         align-items: center;
+    }
+    .form{
+        margin-bottom: 2em;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
