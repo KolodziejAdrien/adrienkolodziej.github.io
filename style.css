@@ -735,6 +735,12 @@ p {
 
 /* Media Query For Phone */
 @media (min-width: 320px) and (max-width: 480px) {
+	.skills .background{
+		display: none;
+	}
+	.skills {
+		background: linear-gradient(133deg, rgba(34,33,57,1) 7%, rgba(34,33,57,1) 76%, rgba(20,0,255,1) 100%);
+	}
 	#hero h1{
 		font-size: 5em;
 	}
@@ -819,6 +825,12 @@ p {
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
+	.skills .background{
+		display: none;
+	}
+	.skills {
+		background: linear-gradient(133deg, rgba(34,33,57,1) 7%, rgba(34,33,57,1) 76%, rgba(20,0,255,1) 100%);
+	}
 	.footer{
 		display: none;
 	}
