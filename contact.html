@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <title>My website</title>
@@ -20,11 +21,11 @@
             <div class="nav-list">
               <div class="hamburger"><div class="bar"></div></div>
               <ul>
-                <li><a href="./index.html#hero" data-after="Home">Home</a></li>
                 <!-- <li><a href="./index.html#projects" data-after="Projects">Projets</a></li> -->
-                <li><a href="./index.html#skills" data-after="skills">Compétences</a></li>
-                <li><a href="./index.html#about" data-after="About">A propos</a></li>
-                <li><a href="./index.html#contact" data-after="Contact">Contact</a></li>
+                <li><a href="./skills.html" data-after="skills">Compétences</a></li>
+                <li><a href="./projects.html" data-after="Projets">Projets</a></li>
+                <li><a href="./about.html" data-after="About">A propos</a></li>
+                <li><a href="./contact.html" data-after="Contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -34,7 +35,16 @@
 
       <!-- Form Section -->
       <section id="form">
-          <div class="container">
+          <div class="container contacter">
+            <div class="background">
+              <img src="./img/back-one.jpg" alt="">
+            </div>
+            <div class="infos">
+              <h1>Contactez moi</h1>
+              <h2>haloadrien@outlook.fr</h2>
+              <a href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank">Profile Linkedin</a>
+              <a href="https://github.com/KolodziejAdrien" target="blank">Profile Github </a>
+            </div>
               <div class="form">
                 <h2>Envoyez moi un message</h2>
                   <form action="" method="post">
@@ -59,25 +69,83 @@
                       <button type="submit" class="btn" onclick="send()">Envoyer</button>
                   </form>
               </div>
-              <div class="wave"></div>
           </div>
       </section>
       <!-- End Form Section -->
-          <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span>A</span>drien</h1>
-                <h2>Développeur web</h2>
-                <div class="social-icon">
-                    <div class="social-item">
-                        <a href="#"><img src="./img/instagram2.png" alt=""></a>
-                    </div>
+<!-- Footer -->
+<section id="footer">
+  <div class="footer container">
+      <div class="brand">
+          <h1><span>A</span>drien</h1>
+          <h2>Développeur web</h2>
+      </div>
+      <div class="bandeau">
+          <div class="bandeau-item">
+             <p> <span>"Good Developers will never stop Developing & </span></p>
+              <p>Good Development will never stop Changing"</p>
+          </div>
+      </div>
+      <div class="social-icon">
+          <div class="social-item">
+              <a href="https://github.com/KolodziejAdrien" target="blank"><img src="./img/github.png" alt=""></a>
+          </div>
+          <div class="social-item">
+              <a href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank"><img src="./img/linkedin.png" alt=""></a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- End Footer -->
+<div class="mobile-footer-spacer"></div>
+
+
+<!-- mobile footer -->
+<section id="mobile_footer">
+    <div class="mobile_footer container">
+        <div class="mobile-footer-item">
+            <a href="./index.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-home"></i></p>
                 </div>
-            </div>
+                <div class="mobile-txt">
+                    <p>Acceuil</p>
+                </div>
+            </a>
         </div>
-    </section>
-    <!-- End Footer -->
+        <div class="mobile-footer-item">
+            <a href="./projects.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-project-diagram"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>projets</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile-footer-item">
+            <a href="./skills.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-map"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>Skills</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile-footer-item">
+            <a href="./about">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-address-card"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>A propos</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- End mobile footer -->
+
     <script src="./app.js"></script>
     <script>
         function send() {

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Mon portfolio</title>
+</head>
+<body>
+    <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="./index.html"><h1><span>A</span>drien</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="./skills.html" data-after="skills">Compétences</a></li>
+            <li><a href="./projects.html" data-after="Projects">Projets</a></li>
+            <li><a href="./about.html" data-after="About">à propos</a></li>
+            <li><a href="./contact.html" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Skills Section -->
+
+  <section id="skills">
+    <div class="skills container">
+        <div class="background">
+            <img src="./img/back-two.jpg" alt="">
+        </div>
+    <div class="content">
+        <div class="skills-header">
+            <h1 class="section-title">Mes <span>Compétences</span></h2>
+        </div>
+        <div class="skills-bloc">
+            <div class="skills-item">
+                <div class="skill-info">
+                    <img src="./img/front.png" alt="">
+                    <h2>Front end développement</h2>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Angular</li>
+                        <li>Jquery</li>
+                        <li>Bootstrap</li>
+                        <li>API | Axios</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-item">
+                <div class="skill-info">
+                    <img src="./img/back.png" alt="">
+                    <h2>Back end développement</h2>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>Mysql</li>
+                        <li>Mongo DB</li>
+                        <li>Mongoose</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-item">
+                <div class="skill-info">
+                    <img src="./img/divers.png" alt="">
+                    <h2>Divers</h2>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Github</li>
+                        <li>Postman</li>
+                        <li>Visual studio code</li>
+                        <li>Figma</li>
+                        <li>Docker</li>
+                        <li>Jetbrain</li>
+                        <li>Jira</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- End Skills Section -->
+
+<!-- Footer -->
+<section id="footer">
+    <div class="footer container">
+        <div class="brand">
+            <h1><span>A</span>drien</h1>
+            <h2>Développeur web</h2>
+        </div>
+        <div class="bandeau">
+            <div class="bandeau-item">
+               <p> <span>"Good Developers will never stop Developing & </span></p>
+                <p>Good Development will never stop Changing"</p>
+            </div>
+        </div>
+        <div class="social-icon">
+            <div class="social-item">
+                <a href="https://github.com/KolodziejAdrien" target="blank"><img src="./img/github.png" alt=""></a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank"><img src="./img/linkedin.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Footer -->
+<div class="mobile-footer-spacer"></div>
+
+
+<!-- mobile footer -->
+<section id="mobile_footer">
+    <div class="mobile_footer container">
+        <div class="mobile-footer-item">
+            <a href="./index.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-home"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>Acceuil</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile-footer-item">
+            <a href="./projects.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-project-diagram"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>projets</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile-footer-item">
+            <a href="./about.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-address-card"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>A propos</p>
+                </div>
+            </a>
+        </div>
+        <div class="mobile-footer-item">
+            <a href="./contact.html">
+                <div class="mobile-icon">
+                    <p><i class="fas fa-phone"></i></p>
+                </div>
+                <div class="mobile-txt">
+                    <p>Contact</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- End mobile footer -->
+<script src="./app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".skills-item"),
+        {
+            max: 5,
+            speed: 200,
+            glare: true,
+            "max-glare": .2
+        });
+    </script>
+</body>
+</html>
