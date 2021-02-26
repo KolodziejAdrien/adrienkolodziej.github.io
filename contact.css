@@ -223,6 +223,8 @@ color: lightgray;
         height: 20vh;
         justify-content: center;
         align-items: center;
+        margin-left: 2em;
+        margin-top: 5vh;
     }
 }
 
@@ -237,5 +239,17 @@ color: lightgray;
         height: 20vh;
         justify-content: center;
         align-items: center;
+        margin-left: 2em;
+        margin-top: 5vh;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+    .infos{
+        margin-left: 5em;
+    }
+}
+@media (min-width: 1281px) {
+    .infos{
+        margin-left: 5em;
     }
 }
