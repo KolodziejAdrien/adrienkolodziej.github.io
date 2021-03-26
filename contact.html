@@ -45,30 +45,30 @@
               <a href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank">Profile Linkedin</a>
               <a href="https://github.com/KolodziejAdrien" target="blank">Profile Github </a>
             </div>
-              <!-- <div class="form">
+              <div class="form">
                 <h2>Envoyez moi un message</h2>
-                  <form action="" method="post">
+                  <form action="" method="post" data-netlify="true">
                       <div class="form-item">
-                        <input type="text" class="txtb"  required id="name">
+                        <input type="text" class="txtb"  required id="name" name="nom">
                         <label for="name" class="label-name">
                             <span>Nom</span>
                         </label>
                       </div>
                       <div class="form-item">
-                        <input type="text" class="txtb" required id="email">
+                        <input type="text" class="txtb" required id="email" name="mail">
                         <label for="email" class="label-name">
                             <span>Email</span>
                         </label>
                       </div>
                       <div class="form-item area">
-                        <textarea type="text" class="txtb" required id="message"></textarea>
+                        <textarea type="text" class="txtb" required id="message" name="message"></textarea>
                         <label for="name" class="label-area">
                             <span>Message</span>
                         </label>
                       </div>
-                      <button type="submit" class="btn" onclick="send()">Envoyer</button>
+                      <button type="submit" class="btn">Envoyer</button>
                   </form>
-              </div> -->
+              </div>
           </div>
       </section>
       <!-- End Form Section -->
@@ -147,21 +147,6 @@
 <!-- End mobile footer -->
 
     <script src="./app.js"></script>
-    <script>
-        function send() {
-            Email.send({
-                // name: document.getElementById('name').value,
-                Host : "smtp.gmail.com",
-                Username : "adrienkolodziej@gmail.com",
-                Password : "pass",
-                To : "adrien.kolodziej@gmail.com",
-                From : document.getElementById('email').value,
-                Subject : "oui",
-                Body : document.getElementById('message').value
-            }).then (function (response) {
-                alert("mail envoyé")
-            });
-        };
-    </script>
+
 </body>
 </html>
