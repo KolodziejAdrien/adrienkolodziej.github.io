@@ -3,6 +3,11 @@
     position: relative;
     z-index: 1;
 }
+@media (max-width: 40em) {
+    .form{
+        margin-top: 8em;
+    }
+}
 .contacter{
     justify-content: flex-start;
 }
@@ -24,6 +29,16 @@
     flex-direction: column;
     width: 50%;
     height: 60vh;
+}
+@media (max-width: 40em) {
+    .infos{
+        /* position: absolute; */
+        /* bottom: 0; */
+        height: 2vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12em;
+    }
 }
 .infos h1{
     color: #fff;
@@ -177,12 +192,12 @@ color: lightgray;
     .contacter{
         flex-direction: column;
     }
-    .infos{
+    /* .infos{
         height: 20vh;
         justify-content: center;
         align-items: center;
         margin-top: 5vh;
-    }
+    } */
     .form{
         width: 315px;
     }
@@ -240,7 +255,7 @@ color: lightgray;
         justify-content: center;
         align-items: center;
         margin-left: 2em;
-        margin-top: 5vh;
+        margin-top: 6vh;
     }
 }
 @media (min-width: 1025px) and (max-width: 1280px){

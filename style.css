@@ -677,6 +677,7 @@ p {
 	bottom: 0;
 	left: 0;
 	z-index: 5;
+	padding: 1em 0;
 }
 .mobile_footer a{
 	width: 100%;
