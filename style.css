@@ -288,104 +288,74 @@ p {
 }
 
 /* End Hero Section */
-
-/* Projects section */
-#projects .projects {
+.projects{
 	flex-direction: column;
-	/* max-width: 1200px; */
-	margin: 0 auto;
-	padding: 100px 0;
-	min-height: 100vh;
-}
-#projects .developpement {
-	display: flex;
+	justify-content: flex-start;
 	width: 100%;
-	height: 100px;
+	background: linear-gradient(162deg, rgba(68,10,190,1) 0%, rgba(34,33,57,1) 36%);
+}
+.projectHeader{
+	padding: 1em;
+	margin: 10em 0 5em 0;
+}
+.projectHeader h1{
+	font-size: 5em;
+	color: #fff;
+}
+.projectList{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
+}
+.projectItem {
+	border: 1px solid hsl(0, 0%, 42%);
+	margin: 2em 2em 4em 2em;
+	height: 13em;
+	display: flex;
+	flex-direction: row;
+	border-radius: 2em;
+	position: relative;
+	overflow: hidden;
+	background:rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(40px);
+}
+.projectImg{
+	width: 13em;
+	height: 13em;
+	overflow: hidden;
+	border-right: 1px solid hsl(0, 0%, 42%);
+}
+.projectImg a img{
+	width: 100%;
+	height: 100%;
 }
 
-.developpement p {
-	color: white;
-	font-size: 1.6rem;
-	letter-spacing: .1rem;
-	font-weight: 500;
+.projectInfo{
+	padding: .5em 1em .2em 1em;
 }
-#projects .projects-header h1 {
-	margin-bottom: 50px;
-}
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	min-width: 600px;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 40%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-#projects .project-info h1 {
+
+.projectInfo h2{
+	color: #ffffff;
+	margin-bottom: 1.2rem;
 	font-size: 4rem;
-	font-weight: 500;
 }
-#projects .project-info h2 {
+.projectInfo h3{
+	color: #c9c9c9;
+	font-size: 2rem;
+}
+.projectInfo p{
+	color: #a5a5a5;
 	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
+	font-weight: 400;
 }
-#projects .project-info p {
-	color: white;
-}
-#projects .project-img {
-	flex-basis: 60%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-	background-image: url(img/technical-issue.png);
-	background-size: 15%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-#projects .project-img a {
-	position: relative;
-	z-index: 2;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .5;
-}
+/* Project section */ 
 
-#projects .project-img img {
-	transition: .3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
-}
-/* End Projects section */
+
+
+/* End Project section */ 
 
 /* Skills section */
 
@@ -814,17 +784,6 @@ p {
 .skill-list li{
 	margin: 10px;
 }
-#projects .project-item {
-	min-width: 0;
-}
-#projects .project-item img{
-	width: 315px;
-	max-width: 400px;
-	min-height: 150px;
-}
-#projects .project-info {
-	max-width: 400px;
-}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -865,19 +824,6 @@ margin-top: 0;
 }
 #header .nav-list ul li {
 	margin-bottom: 20px;
-}
-#projects .project-item {
-	min-width: 0;
-}
-#projects .project-item img{
-	width: 315px;
-	max-width: 400px;
-	min-height: 150px;
-}
-
-#projects .project-info {
-	max-width: 390px;
-
 }
 .skills-header {
 	margin-top: 8vh;
@@ -959,32 +905,9 @@ margin-top: 0;
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	#projects .project-item {
-		min-width: 700px;
-	}
 
 
 	/* End Services Section */
-
-	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		max-width: 500px;
-		border-radius: 0;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
 
 	/* Skills */
 	.skills-header{
@@ -1116,14 +1039,6 @@ margin-top: 0;
 }
 /* End header */
 
-#projects .project-img {
-width: 100%;
-min-height: 250px;
-}
-.project-info {
-width: 100%;
-}
-
 #services .service-bottom .service-item {
 	flex-basis: 22%;
 	margin: 1.5%;
@@ -1167,18 +1082,6 @@ width: 100%;
 		display: none;
 	}
 	/* End header */
-
-	#projects .project-item {
-		min-width: 400px;
-	}
-	#projects .project-img {
-		width: 100%;
-		min-height: 300px;
-		max-height: 400px;
-	}
-	#projects .project-info {
-		width: 100%;
-	}
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
