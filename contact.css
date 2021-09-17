@@ -126,6 +126,7 @@ letter-spacing: 0.2rem;
 background: transparent;
 color: white;
 border: 1px solid white;
+cursor: pointer;
 }
 .form-item .label-name {
     color: white;

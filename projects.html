@@ -39,7 +39,7 @@
            <div class="projectItem">
             <div class="projectImg">
                 <!-- <span class="projectHover">Namako</span> -->
-                <a href="https://namako.netlify.app/" target="blank"><img src="./img/namako.PNG" alt=""></a>
+                <a href="https://namako.netlify.app/" target="blank"></a><img src="./img/namako.PNG" alt=""></a>
             </div>
                <div class="projectInfo">
                    <h2>Namako</h2>
@@ -48,9 +48,10 @@
                </div>
            </div>
            <div class="projectItem">
+            <a href="https://images-stockage.netlify.app/" target="blank"></a>
             <div class="projectImg">
                 <!-- <span class="projectHover">PhotoStorage</span> -->
-                <a href="https://images-stockage.netlify.app/" target="blank"><img src="./img/imagestorage.PNG" alt=""></a>
+                <img src="./img/imagestorage.PNG" alt="">
             </div>
             <div class="projectInfo">
                 <h2>PhotoStorage</h2>
@@ -139,5 +140,15 @@
 </section>
 <!-- End mobile footer -->
 <script src="./app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".projectItem"),
+        {
+            max: 3,
+            speed: 200,
+            glare: true,
+            "max-glare": .2
+        });
+    </script>
 </body>
 </html>
