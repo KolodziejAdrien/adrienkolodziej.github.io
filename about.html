@@ -42,8 +42,8 @@
             </div> -->
             <div class="col-right">
                 <h1 class="section-title">à propos de <span>Moi</span></h1>
-                <h2>Développeur Full Stack</h2>
-                <p>Diplômé de la formation UHA 4.0 à mulhouse. Détenant d'une licence professionnelle en développement informatique.
+                <h2 class="fade">Développeur Full Stack</h2>
+                <p class="fade">Diplômé de la formation UHA 4.0 à mulhouse. Détenant d'une licence professionnelle en développement informatique.
                  Mes compétences portent sur tous les aspects d'un projet, client, serveur, base de données.
                 Ce que je préfère dans le développement ? Voir mes idées prendre forme et donner vie au projet.</p>
                 <a href="Kolodziej-adrien-CV.pdf" download="Kolodziej-adrien-CV.pdf" class="cta">Télécharger mon cv</a>
@@ -127,5 +127,17 @@
 </section>
 <!-- End mobile footer -->
 <script src="./app.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>	
+
+
+<script>
+    const tl = gsap.timeline({defaults: {ease:"power2.inOut", duration: 1.5}})
+    tl.from('.section-title', {y: '-30px', opacity:0}, ".1")
+    .from('.fade', { opacity:0,  stagger: .2}, "-=.9")
+    .from('.cta', {y: '40px', opacity:0}, "-=.8")
+</script>
+
 </body>
 </html>

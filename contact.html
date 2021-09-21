@@ -40,33 +40,33 @@
               <img src="./img/back-one.jpg" alt="">
             </div>
             <div class="infos">
-              <h1>Contactez moi</h1>
-              <h2>haloadrien@outlook.fr</h2>
-              <a href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank">Profile Linkedin</a>
+              <h1 class="fade">Contactez moi</h1>
+              <h2 class="fade">haloadrien@outlook.fr</h2>
+              <a class="fade" href="https://www.linkedin.com/in/adrien-kolodziej-727510152/" target="blank">Profile Linkedin</a>
               <!-- <a href="https://github.com/KolodziejAdrien" target="blank">Profile Github </a> -->
             </div>
               <div class="form">
                 <h2>Envoyez moi un message</h2>
                   <form action="" method="post" data-netlify="true">
-                      <div class="form-item">
+                      <div class="form-item first">
                         <input type="text" class="txtb"  required id="name" name="nom">
                         <label for="name" class="label-name">   
                             <span>Nom</span>
                         </label>
                       </div>
-                      <div class="form-item">
+                      <div class="form-item second">
                         <input type="text" class="txtb" required id="email" name="mail">
                         <label for="email" class="label-name">
                             <span>Email</span>
                         </label>
                       </div>
-                      <div class="form-item area">
+                      <div class="form-item area third">
                         <textarea type="text" class="txtb" required id="message" name="message"></textarea>
                         <label for="name" class="label-area">
                             <span>Message</span>
                         </label>
                       </div>
-                      <button type="submit" class="btn">Envoyer</button>
+                      <button type="submit" class="btn fourth">Envoyer</button>
                   </form>
               </div>
           </div>
@@ -147,6 +147,20 @@
 <!-- End mobile footer -->
 
     <script src="./app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>	
+
+
+<script>
+    const tl = gsap.timeline({defaults: {ease:"power2.inOut", duration: 1.5}})
+    tl.from('.fade', { opacity:0,  stagger: .4}, ".4")
+    tl.from('.form', { opacity:0 }, "-=.4")
+    tl.from('.first', { x:'-50px', opacity:0 }, "-=1")
+    tl.from('.second', { x:'50px', opacity:0 }, "-=1.2")
+    tl.from('.third', { x:'-50px', opacity:0 }, "-=1.2")
+    tl.from('.fourth', { y:'50px', opacity:0 }, "-=.4")
+</script>
 
 </body>
 </html>
