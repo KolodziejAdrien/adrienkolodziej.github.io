@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../style.css" />
+    <link rel="stylesheet" href="./doneProjects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Mon portfolio</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="./../index.html"
+              ><h1><span>A</span>drien</h1></a
+            >
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li>
+                <a href="./../skills.html" data-after="skills">Compétences</a>
+              </li>
+              <li>
+                <a href="./../projects.html" data-after="Projects">Projets</a>
+              </li>
+              <li><a href="./../about.html" data-after="About">à propos</a></li>
+              <li>
+                <a href="./../contact.html" data-after="Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Project Section -->
+    <section>
+      <div class="container column">
+        <div class="projectInfoHeader">
+          <h1 class="white">Web application de gestion de commandes</h1>
+          <h3 class="white3">React - Nodejs / Express - MongoDB</h3>
+        </div>
+        <div class="spacerPj"></div>
+        <div class="reverseInfo">
+          <div class="row">
+            <div class="imageContainer">
+              <img src="./../img/adncommande1.PNG" alt="" />
+            </div>
+            <div class="infos">
+              <h2 class="white">Page principale</h2>
+              <h3 class="white2">Formulaire d'enregistrement des commandes</h3>
+              <h3 class="white3">
+                Les utilisateurs rentrent les informations de chaque commandes
+                pour les envoyer dans la base de données. L'utilisateur doit
+                être connecté pour entrer une commande.
+              </h3>
+            </div>
+          </div>
+          <div class="spacerPj"></div>
+
+          <div class="row">
+            <div class="imageContainer">
+              <img src="./../img/adncommande2.PNG" alt="" />
+            </div>
+            <div class="infos">
+              <h2 class="white">Partie administateur</h2>
+              <h3 class="white2">
+                L'admin récupère les commandes dans un tableaux
+              </h3>
+              <h3 class="white3">
+                Celui-ci peut télécharger les commandes en   pdf. Il
+                peut supprimer ou modifier une commande existante.
+              </h3>
+            </div>
+          </div>
+          <div class="spacerPj"></div>
+
+          <div class="tech">
+            <h2 class="white2">Les librairies utilisées</h2>
+            <p class="white3">
+              moment - jsonwebtoken - material icon - axios - redux -
+              sweet-alert - jspdf
+            </p>
+            <p class="white3">
+              bcrypt - body-parser - cors - dotenv - mongoose - nodemon
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>A</span>drien</h1>
+          <h2>Développeur web</h2>
+        </div>
+        <div class="bandeau">
+          <div class="bandeau-item">
+            <p><span>"Good Developers will never stop Developing & </span></p>
+            <p>Good Development will never stop Changing"</p>
+          </div>
+        </div>
+        <div class="social-icon">
+          <div class="social-item">
+            <a
+              href="https://www.linkedin.com/in/adrien-kolodziej-727510152/"
+              target="blank"
+              ><img src="./../img/linkedin.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+
+    <div class="mobile-footer-spacer"></div>
+
+    <!-- mobile footer -->
+    <section id="mobile_footer">
+      <div class="mobile_footer container">
+        <div class="mobile-footer-item">
+          <a href="./../index.html">
+            <div class="mobile-icon">
+              <p><i class="fas fa-home"></i></p>
+            </div>
+            <div class="mobile-txt">
+              <p>Acceuil</p>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-footer-item">
+          <a href="./../projects.html">
+            <div class="mobile-icon">
+              <p><i class="fas fa-project-diagram"></i></p>
+            </div>
+            <div class="mobile-txt">
+              <p>projets</p>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-footer-item">
+          <a href="./../skills.html">
+            <div class="mobile-icon">
+              <p><i class="fas fa-map"></i></p>
+            </div>
+            <div class="mobile-txt">
+              <p>Skills</p>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-footer-item">
+          <a href="./../contact.html">
+            <div class="mobile-icon">
+              <p><i class="fas fa-phone"></i></p>
+            </div>
+            <div class="mobile-txt">
+              <p>Contact</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End mobile footer -->
+    <script src="./../app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <script>
+      const tl = gsap.timeline({
+        defaults: { ease: "power2.inOut", duration: 1.5 },
+      });
+      tl.from(".section-title", { y: "-30px", opacity: 0 }, ".1")
+        .from(".fade", { opacity: 0, stagger: 0.2 }, "-=.9")
+        .from(".cta", { y: "40px", opacity: 0 }, "-=.8");
+    </script>
+  </body>
+</html>

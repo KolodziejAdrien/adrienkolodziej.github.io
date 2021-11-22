@@ -69,11 +69,11 @@
 
 
     <script>
-        const tl = gsap.timeline({defaults: {ease:"power2.inOut", duration: 1.5}})
+        const tl = gsap.timeline({defaults: {ease:"power2.inOut", duration: 1.2}})
         tl.from('.first', {opacity :0})
-        .from('.second', {y: '-50px', opacity:0 }, "-=.5")
-        .from('.third', {y: '-50px', opacity:0 }, "-=.5")
-        .from('li', {y: '50px', opacity:0, stagger: .2}, "-=.7")
+        .from('.second', {y: '-50px', opacity:0 }, "-=0")
+        .from('.third', {y: '-50px', opacity:0 }, "-=0")
+        .from('li', {y: '50px', opacity:0, stagger: .2}, "-=.1")
    </script>
 </body>
 </html>

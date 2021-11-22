@@ -1,0 +1,115 @@
+
+.reverseInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    width: 90%;
+}
+.projectInfoHeader{
+    margin: 10em 0 3em 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 2em;
+    padding: 2em;
+    height: 300px;
+}
+
+.imageContainer {
+    flex-basis: 20%;
+    border-radius:  5px;
+    height: 100%;
+}
+
+.infos{
+    height: 100%;
+    flex-basis: 80%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.infos h2{
+    color: white;
+    margin-top: .2em;
+}
+.infos h3 {
+    margin: .5em 0 1em 0;
+    font-weight: 400;
+}
+.infos p{
+    color: rgb(170, 170, 170);
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.white{
+    color: white;
+    font-size: 2.95rem;
+}
+.spacerPj{
+    margin: 2em 0 2em 0;
+    height: 1px;
+    width: 15%;
+    background-color: rgb(136, 136, 136);
+}
+.white2{
+    color: rgb(243, 243, 243);
+    font-size: 2.22rem;
+}
+.white3{
+    color: rgb(194, 193, 193);
+    margin-top: .1em;
+    font-size: 1.59rem;
+}
+.tech{
+    margin: 2em 0 0 0;
+    padding: 0 0 2em 0;
+}
+
+@media(max-width: 40em) {
+    .projectInfoHeader{
+        width: 90%;
+        margin: 9em 0 0 0;
+    }
+    .row{
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
+        margin: 2.5em 0 2.5em 0;
+    }
+    .infos{
+        padding: 0;
+        margin: 1em 0 0 0;
+    }
+    .imageContainer{
+        flex-basis: 90%;
+    }
+    .spacerPj{
+        margin: 2em 0 2em 0;
+        width: 60%;
+    }
+}
+
+@media (min-width: 40.1em) and (max-width: 60em) {
+    .projectInfoHeader{
+        width: 90%;
+        margin: 9em 0 0 0;
+    }
+}
